@@ -5,11 +5,14 @@ from django.http.response import HttpResponse
 def index(request):
     name="ajsal"
     context={
-        "name": name
+        "name": name,
+        
     }
     return render(request,"index.html",context=context)
 
 
 def about(request):
-    return render(request,"about.html")
+    context={
+    }
+    return render(request,"about.html",context=context)
 # Create your views here.
