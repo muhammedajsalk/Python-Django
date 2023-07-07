@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.http.response import HttpResponse
 
 def index(request):
-    pass
+    return HttpResponse("Hello world")
 
 
 urlpatterns = [
