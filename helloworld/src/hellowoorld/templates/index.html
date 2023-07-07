@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -8,5 +9,7 @@
 <body>
     <h1>Hello world from webpage</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sunt minus aliquam nam nisi odio aut, tenetur laboriosam ex quaerat quisquam fuga aperiam distinctio sapiente exercitationem rerum molestias expedita maiores?</p>
+    <img src="{% static 'images/image.png' %}" alt="image"/>
+    <img src="{% static 'images/image.png' %}" alt="image"/>
 </body>
 </html>
